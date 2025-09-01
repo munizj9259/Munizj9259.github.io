@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Jovanny</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="table.html">About Me</a>
+    <a class="active" href="form.html">Contact (Form)</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Contact Jovanny</h1>
+  <p>If you'd like to reach out about combat sports or fitness feel free to use the form below. 
+     I'll get back to you as soon as possible!</p>
+
+  <form action="#" method="post" class="pretty-form">
+    <!-- Dropdown -->
+    <label for="topic">Reason for contacting Jovanny:</label>
+    <select id="topic" name="topic" required>
+      <option value="">Choose one...</option>
+      <option>Questions about Combat sports</option>
+      <option>Fitness or Gym Advice</option>
+      <option>Just Saying Hello!</option>
+    </select>
+
+    <!-- Radio buttons with legend -->
+    <fieldset>
+      <legend>Preferred Way to Reach Me:</legend>
+      <label><input type="radio" name="contact" value="email" required> Email</label>
+      <label><input type="radio" name="contact" value="phone"> Phone</label>
+      <label><input type="radio" name="contact" value="social"> Social Media DM</label>
+    </fieldset>
+
+    <!-- Comment box -->
+    <label for="message">Your Message for Jovanny:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Type your message here..."></textarea>
+
+    <!-- Buttons -->
+    <div class="button-row">
+      <button type="submit" class="btn primary">Send to Jovanny</button>
+      <button type="reset" class="btn danger">Clear Form</button>
+    </div>
+  </form>
+</main>
+</body>
+</html>
